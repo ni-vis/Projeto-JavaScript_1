@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/principal.ico">
+    <title>Horas Extras</title>
+</head>
+<body>
+    <div class="box">
+        
+        <img src="img/horas.png"> <h1>| Cálculo de Horas Extras |</h1>
+        
+        <div class="linha">
+            <div class="form">
+                <label for="bruto">Sálario Bruto Atual (mensal)</label>
+                <input type="number" name="bruto" id="bruto">
+                <br>
+                <label for="uteis">Horas Trabalhadas em Dias Úteis </label>
+                <input type="number" name="uteis" id="uteis">
+                <br>
+                <label for="finais">Horas Trabalhadas em Finais de Semana</label>
+                <input type="number" name="finais" id="finais">
+                <br>
+                
+                <button onclick="calc_horas_extras()">CALCULAR</button>
+                <a href="index.html"><button>VOLTAR</button></a>
+            </div>
+            <div class="resposta">
+                <p id="resposta"> O resultado aparecerá aqui ...</p>
+            </div> 
+        </div>
+
+        <p id="horario"></p>
+
+    </div>
+    
+        <script src="funcoes.js"></script>
+</body>
+</html>

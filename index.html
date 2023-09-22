@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/principal.ico">
+    <title>Exercícios de Fixação</title>
+</head>
+<body>
+
+    <div class="box">
+        <h1>| Exercícios de Fixação |</h1>
+        
+        <img src="img/principal.png" id="icone"><br>
+        <a href="horas_extras.html" onmousemove="mudaFoto(2)" onmouseout="mudaFoto(1)"><button> Horas Extras</button></a>
+        <br>
+        <a href="aumento_salario.html" onmousemove="mudaFoto(3)" onmouseout="mudaFoto(1)"><button> Aumento Salarial</button></a>
+        <br>
+        <a href="transporte.html" onmousemove="mudaFoto(4)" onmouseout="mudaFoto(1)"><button>Transporte Coletivo</button></a>
+
+
+        <p id="horario"></p>
+
+    </div>
+    <script src="funcoes.js"></script>
+
+    <script>
+        function mudaFoto(item){
+            if(item==1){
+                document.getElementById("icone").src='img/principal.png'
+
+            }else if(item==2){
+                document.getElementById("icone").src='img/horas.png'
+
+            }else if(item==3){
+                document.getElementById("icone").src='img/aumento.png'
+
+            }else if (item==4){
+                document.getElementById("icone").src='img/onibus.png'
+
+            }
+        }
+    </script>
+</body>
+</html>

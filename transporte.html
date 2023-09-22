@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/principal.ico">
+    <title>Transporte de Coletivo</title>
+</head>
+<body>
+    <div class="box">
+
+        <img src="img/onibus.png"> <h1>| Transporte de Coletivo |</h1>
+
+        <div class="linha">
+            <div class="form">
+
+                <label for="funcionarios">Quantidade de Funcionários que Necessitarão de Transporte Fretado</label>
+                <br>
+                <input type="number" name="funcionarios" id="funcionarios">
+                <br>
+                <label for="dias">Quantidade de Dias Úteis em que o Transporte Será Solicitado</label>
+                <br>
+                <input type="number" name="dias" id="dias">
+                <br>
+
+                <button onclick="transporte()">CALCULAR</button>
+                
+                <a href="index.html"><button>VOLTAR</button></a>
+
+            </div>
+
+            <div class="resposta2">
+
+            <p id="resposta"> O resultado aparecerá aqui ...</p>
+
+        </div>
+    </div>
+
+    <p id="horario"></p>
+    
+</div>
+    <script src="funcoes.js"></script>
+    
+</body>
+</html>

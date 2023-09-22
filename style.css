@@ -1,0 +1,112 @@
+
+body{
+    background-color: #E8CC76;
+    color: white;
+    font: 16pt Arial;
+    text-align: center;
+
+
+}
+.box{
+    width: 80%;
+    height: 80%;
+    margin: 50px auto;
+    border: 2px black solid;
+    background-color: #A09AD4;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    text-align: center;
+
+}
+input{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+#resposta{
+    font-size: larger;
+    color: #CAA5F0;
+    text-align: center;
+    text-decoration: none;
+}
+button{
+    width: 160px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 4px;
+}
+.box img{
+    width: 200px;
+    height: 200px;
+    padding: 2% ;
+}
+.box p{
+    color:#481947;
+}
+.linha{
+    width: 100%;
+    display: flex;
+    padding: 1% 3%;
+
+}
+.resposta{
+    width: 40%;
+    height: 300px;
+    border: #000 1px solid;
+    border-radius: 10px;
+    padding: 1% 3%;
+    background-color: #EEEDEB;
+}
+.resposta2{
+    width: 40%;
+    height: 300px;
+    border: #000 1px solid;
+    border-radius: 10px;
+    margin:1% 1%;
+    background-color: #EEEDEB;
+}
+.resposta3{
+    width: 40%;
+    height: 300px;
+    border: #000 1px solid;
+    border-radius: 10px;
+    padding: 1% 6%;
+    margin: 1% 6%;
+    background-color: #EEEDEB;
+}
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .box {
+        width: 90%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .resposta,
+    .resposta2,
+    .resposta3 {
+        width: 90%;
+        margin: 1% auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14pt;
+    }
+
+    .box {
+        width: 95%;
+    }
+
+    input {
+        width: 95%;
+    }
+
+    button {
+        width: 140px;
+        height: 40px;
+    }
+}
